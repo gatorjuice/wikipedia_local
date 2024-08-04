@@ -15,7 +15,7 @@
     * `./initialize_wikipedia.sh:/docker-entrypoint-initdb.d/initialize_wikipedia.sh`
     * `command: ["bash", "-c", "/docker-entrypoint-initdb.d/initialize_wikipedia.sh && apache2-foreground"]`
 1. Run `docker-compose up --build`
-1. Navigate to [http://localhost:8080/]
+1. Navigate to [http://localhost:8080/](http://localhost:8080/)
 1. Complete the setup through the web UI.
 1. Use the following settings in the MariaDB/SQL settings page, and click "Continue".
     > These values are configured in the `docker-compose.yml` file and can be modified in both places.

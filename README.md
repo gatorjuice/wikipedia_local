@@ -6,6 +6,8 @@
 
 ## Setup and Installation
 
+> Minimal Demo Install: If you don't want to wait potentially days or weeks to see your own copy of Wikipedia running locally, change which initialize_wikipedia script is used in the `docker-compose.yml` file.
+
 ### Before Data Import
 
 1. Install Docker Desktop

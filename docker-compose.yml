@@ -7,7 +7,9 @@ services:
     volumes:
       - mediawiki_data:/var/www/html
       - ./LocalSettings.php:/var/www/html/LocalSettings.php
+      # Swap which initialize script is passed. Minimal will only import a small portion of wikipedia.
       - ./initialize_wikipedia.sh:/docker-entrypoint-initdb.d/initialize_wikipedia.sh
+      # - ./initialize_wikipedia_minimal.sh:/docker-entrypoint-initdb.d/initialize_wikipedia.sh
     environment:
       - MEDIAWIKI_DB_HOST=db
       - MEDIAWIKI_DB_NAME=mediawiki
